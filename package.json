@@ -6,9 +6,9 @@
   "scripts": {
     "webpack": "webpack",
     "build": "webpack",
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "heroku-postbuild": "yarn build"
   },
-  "postinstall": "yarn build",
   "dependencies": {
     "axios": "^0.21.1",
     "dotenv": "^9.0.2",
