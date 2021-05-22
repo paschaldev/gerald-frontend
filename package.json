@@ -6,8 +6,7 @@
   "scripts": {
     "webpack": "webpack",
     "build": "webpack",
-    "dev": "webpack serve",
-    "postinstall": "yarn build"
+    "dev": "webpack serve"
   },
   "dependencies": {
     "axios": "^0.21.1",
