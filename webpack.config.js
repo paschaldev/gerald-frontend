@@ -29,7 +29,8 @@ module.exports = {
       template: path.join(__dirname, "src", "index.html"),
     }),
     new webpack.DefinePlugin({
-      'process.env': JSON.stringify(dotenv.config().parsed)
+      'process.env': JSON.stringify(dotenv.config().parsed),
+      'process.env.API_URL': JSON.stringify(process.env.API_URL),
     })
   ],
 };
