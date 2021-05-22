@@ -6,8 +6,9 @@
   "scripts": {
     "webpack": "webpack",
     "build": "webpack",
-    "start": "webpack serve"
+    "dev": "webpack serve"
   },
+  "postinstall": "yarn build",
   "dependencies": {
     "axios": "^0.21.1",
     "dotenv": "^9.0.2",
