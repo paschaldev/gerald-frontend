@@ -20,9 +20,10 @@ const Login: React.FC = () => {
       setStage('verify')
       setHash(response.data.hash)
     }).catch(err => {
+      console.log(err, process.env.API_URL)
       // Set the error message
       const response = err.response
-      if (response.data) {
+      if (response && response.data) {
         setError(response.data.phone)
       }
     }).finally(() => {
